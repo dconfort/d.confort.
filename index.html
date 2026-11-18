@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>D’CONFORT – Chauffage, climatisation, plomberie à Reims</title>
+<meta name="description" content="D’CONFORT, Reims : chauffage, climatisation, ballons thermodynamiques, plomberie, ventilation et domotique. Marne, Ardennes, Aisne. Devis gratuit.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HVACBusiness","name":"D’CONFORT","telephone":"+33686392622","email":"d.confort.client@outlook.fr","address":{"@type":"PostalAddress","streetAddress":"19 rue Hubert Fandre","postalCode":"51100","addressLocality":"Reims","addressCountry":"FR"},"areaServed":["Reims","Rethel","Épernay","Châlons-en-Champagne","Laon","Marne","Ardennes","Aisne"]}</script>
+<style>
+:root{--blue:#015287;--orange:#DE912F;--white:#F8F8F8;--bg:#F8F8F8;--bg2:#ffffff;--text:#1d2b36;--muted:#51626f;--line:#dbe3ea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a22;--bg2:#16242f;--text:#eef2f5;--muted:#a9b8c3;--line:#26394a}}
+:root[data-theme="dark"]{--bg:#0f1a22;--bg2:#16242f;--text:#eef2f5;--muted:#a9b8c3;--line:#26394a}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--orange);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--orange);color:#1a1a1a}
+.btn.ghost{background:transparent;color:#fff}
+/* Hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;text-align:center;overflow:hidden;background:var(--blue)}
+.hero .bg{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+/* Remplacer par les vraies photos : background-image:url(...) */
+.hero .left{background:linear-gradient(135deg,#6b8fa8,#2c5a7a)}
+.hero .right{background:linear-gradient(225deg,#9fb8c8,#3d6c8c)}
+.hero .veil{position:absolute;inset:0;background:rgba(1,82,135,.82)}
+.hero .in{position:relative;padding:90px 20px 70px;max-width:760px;margin:0 auto}
+.logo{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:800;letter-spacing:.04em;margin:0}
+.logo span{color:var(--orange)}
+.slogan{font-size:1.4rem;margin:.2em 0 1em;color:var(--orange);font-weight:600}
+.hero p.lead{font-size:1.1rem;margin:0 auto 1.8em;max-width:600px}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--blue);color:#fff}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px;overflow-x:auto}
+nav b{white-space:nowrap}
+nav .links{display:flex;gap:16px;font-size:.92rem;white-space:nowrap}
+nav a{text-decoration:none;opacity:.92}
+nav a:hover{color:var(--orange)}
+section{padding:70px 0}
+section.alt{background:var(--bg2)}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);color:var(--blue);margin:0 0 .3em}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:#7fc0ee}}
+:root[data-theme="dark"] h2{color:#7fc0ee}
+h2::after{content:"";display:block;width:60px;height:4px;background:var(--orange);margin-top:10px;border-radius:2px}
+.sub{color:var(--muted);max-width:680px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));margin-top:30px}
+.card{background:var(--bg2);border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:14px;padding:24px}
+section.alt .card{background:var(--bg)}
+.card h3{margin:0 0 8px;font-size:1.25rem}
+.card ul{margin:0;padding-left:18px;color:var(--muted)}
+.card.hot{border-top-color:var(--orange)}
+.feature{margin-top:26px;background:var(--blue);color:#fff;border-radius:16px;padding:28px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;border-left:8px solid var(--orange)}
+.feature div{flex:1 1 320px}
+.feature h3{margin:0 0 6px;font-size:1.4rem;color:var(--orange)}
+.feature p{margin:0}
+.why{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.why li{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-weight:600}
+.why li::before{content:"✓";color:#fff;background:var(--orange);border-radius:50%;display:inline-block;width:24px;height:24px;text-align:center;line-height:24px;margin-right:10px;font-size:.9rem}
+.acc{margin:44px 0 6px;font-size:1.35rem;color:var(--blue)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .acc{color:#7fc0ee}}
+:root[data-theme="dark"] .acc{color:#7fc0ee}
+.steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
+.steps div{background:var(--bg2);border:1px solid var(--line);border-left:5px solid var(--orange);border-radius:12px;padding:16px 18px}
+.steps b{color:var(--orange)}
+.steps p{margin:6px 0 0;color:var(--muted);font-size:.95rem}
+.zone-text{font-size:1.2rem;max-width:760px;margin:24px 0}
+.zones{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.zones span{background:var(--bg);border:1px solid var(--line);padding:8px 16px;border-radius:999px}
+.zones span.dep{background:var(--blue);color:#fff;border-color:var(--blue)}
+.contact{background:var(--blue);color:#fff}
+.contact h2{color:#fff}
+.contact .grid{margin-top:26px}
+.contact .card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-top:4px solid var(--orange);color:#fff}
+.contact .card a{color:#fff;font-weight:700}
+footer{background:#01385d;color:#cfdde8;text-align:center;padding:22px 20px calc(22px + env(safe-area-inset-bottom,0px));font-size:.9rem}
+.callbar{display:none}
+@media(max-width:640px){
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding-bottom:env(safe-area-inset-bottom,0px);background:var(--blue)}
+ .callbar a{flex:1;text-align:center;padding:14px;font-weight:700;text-decoration:none;color:#fff}
+ .callbar a:first-child{background:var(--orange);color:#1a1a1a}
+ footer{padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+ nav .links{display:none}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>D’CONFORT</b>
+<div class="links"><a href="#apropos">À propos</a><a href="#prestations">Prestations</a><a href="#pourquoi">Pourquoi nous</a><a href="#zone">Zone</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="accueil">
+ <div class="bg"><div class="left" aria-hidden="true"></div><div class="right" aria-hidden="true"></div></div>
+ <div class="veil"></div>
+ <div class="in">
+  <h1 class="logo">D’<span>CONFORT</span></h1>
+  <div class="slogan">Le bien-être chez soi</div>
+  <p class="lead">Votre maison mérite un projet pensé pour vous : confortable, utile et adapté à votre quotidien. Chauffage, climatisation, eau chaude, plomberie, ventilation, domotique : nous vous écoutons, nous vous conseillons, puis nous réalisons. Du premier échange au suivi, nous construisons avec vous le bien-être chez soi.</p>
+  <div class="cta">
+   <a class="btn primary" href="tel:+33686392622">📞 Appeler</a>
+   <a class="btn ghost" href="mailto:d.confort.client@outlook.fr?subject=Demande%20de%20devis%20gratuit">Demander un devis</a>
+  </div>
+ </div>
+</header>
+
+<section id="apropos"><div class="wrap">
+ <h2>À propos</h2>
+ <p class="sub">D’CONFORT est une entreprise locale basée à Reims, dirigée par Valentin Duvivier. Nous intervenons chez les particuliers pour installer, entretenir et dépanner vos équipements de confort, avec une approche simple : être réactif, travailler proprement et vous accompagner à chaque étape.</p>
+ <div class="grid">
+  <div class="card"><h3>Entreprise locale</h3><p>Un interlocuteur proche de chez vous, qui connaît le territoire.</p></div>
+  <div class="card"><h3>Réactivité</h3><p>Une réponse rapide à vos demandes, y compris pour les dépannages.</p></div>
+  <div class="card"><h3>Travail soigné</h3><p>Des installations propres, fiables et durables.</p></div>
+  <div class="card"><h3>Accompagnement</h3><p>Des conseils clairs, du devis jusqu’à la mise en service.</p></div>
+ </div>
+</div></section>
+
+<section class="alt" id="prestations"><div class="wrap">
+ <h2>Nos prestations</h2>
+ <p class="sub">Six domaines d’intervention pour le confort de votre maison, toute l’année.</p>
+ <div class="grid">
+  <div class="card"><h3>🔥 Chauffage</h3><ul><li>Installation de chaudières</li><li>Remplacement d’équipements</li><li>Entretien</li><li>Dépannage</li><li>Thermostats connectés</li></ul></div>
+  <div class="card"><h3>❄️ Climatisation</h3><ul><li>Climatisation réversible</li><li>Pompe à chaleur Air/Air</li><li>Installation et mise en service</li><li>Entretien</li><li>Dépannage</li></ul></div>
+  <div class="card hot"><h3>💧 Eau chaude sanitaire</h3><ul><li><b>Ballon thermodynamique</b></li><li>Chauffe-eau électrique</li><li>Ballon d’eau chaude</li><li>Entretien</li><li>Dépannage</li></ul></div>
+  <div class="card"><h3>🚿 Plomberie</h3><ul><li>Dépannage rapide</li><li>Recherche de fuite</li><li>Remplacement de robinetterie</li><li>Remplacement de sanitaires</li><li>Modification d’installation existante</li></ul></div>
+  <div class="card"><h3>🌬️ Ventilation</h3><ul><li>VMC simple flux</li><li>VMC double flux</li><li>Installation</li><li>Entretien</li><li>Dépannage</li></ul></div>
+  <div class="card"><h3>🏠 Domotique</h3><ul><li>Thermostats connectés</li><li>Pilotage du chauffage</li><li>Volets roulants connectés</li><li>Éclairage connecté</li><li>Maison intelligente</li></ul></div>
+ </div>
+ <div class="feature">
+  <div><h3>Ballon thermodynamique : jusqu’à 3 fois moins d’énergie</h3>
+  <p>Il capte les calories de l’air pour chauffer votre eau, avec une consommation bien inférieure à un chauffe-eau classique. Demandez-nous une étude gratuite.</p></div>
+  <a class="btn primary" href="mailto:d.confort.client@outlook.fr?subject=Devis%20ballon%20thermodynamique">Devis ballon thermodynamique</a>
+ </div>
+</div></section>
+
+<section id="pourquoi"><div class="wrap">
+ <h2>Pourquoi choisir D’CONFORT</h2>
+ <p class="sub">Chaque foyer est différent. Notre priorité n’est pas de vous vendre un équipement, mais de construire avec vous un projet confortable, utile et adapté à votre logement, à vos habitudes et à votre budget.</p>
+ <ul class="why">
+  <li>Entreprise locale</li><li>Réactivité</li><li>Conseils personnalisés</li>
+  <li>Travail soigné</li><li>Devis gratuit</li><li>Suivi professionnel</li>
+ </ul>
+ <h3 class="acc">Votre projet, étape par étape</h3>
+ <div class="steps">
+  <div><b>1. Écoute</b><p>Nous prenons le temps de comprendre votre logement, vos besoins et vos contraintes.</p></div>
+  <div><b>2. Conseil</b><p>Nous vous proposons la solution la plus adaptée, avec des explications claires et sans jargon.</p></div>
+  <div><b>3. Devis gratuit</b><p>Un devis détaillé et transparent, pour décider en confiance.</p></div>
+  <div><b>4. Réalisation soignée</b><p>Une installation propre, dans les délais, avec une mise en service expliquée.</p></div>
+  <div><b>5. Suivi</b><p>Entretien, réglages et dépannage : nous restons disponibles après les travaux.</p></div>
+ </div>
+</div></section>
+
+<section class="alt" id="zone"><div class="wrap">
+ <h2>Zone d’intervention</h2>
+ <p class="zone-text">Basés à <b>Reims</b>, nous intervenons dans toute la <b>Marne (51)</b>, les <b>Ardennes (08)</b> et le sud de l’<b>Aisne (02)</b> : Reims et son agglomération, Épernay, Châlons-en-Champagne, Rethel, Laon et leurs alentours.</p>
+ <p><a class="btn primary" href="tel:+33686392622">Votre commune n’est pas citée ? Appelez-nous</a></p>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+ <h2>Contact</h2>
+ <p>Une question, une panne, un projet ? Devis gratuit.</p>
+ <div class="grid">
+  <div class="card"><h3>📞 Téléphone</h3><a href="tel:+33686392622">06 86 39 26 22</a></div>
+  <div class="card"><h3>📧 E-mail</h3><a href="mailto:d.confort.client@outlook.fr">d.confort.client@outlook.fr</a></div>
+  <div class="card"><h3>📍 Adresse</h3><p style="margin:0">19 rue Hubert Fandre<br>51100 Reims</p></div>
+ </div>
+ <p style="margin-top:28px"><a class="btn primary" href="mailto:d.confort.client@outlook.fr?subject=Demande%20de%20devis%20gratuit">Demander un devis gratuit</a></p>
+</div></section>
+
+<footer>© D’CONFORT – Valentin Duvivier – 19 rue Hubert Fandre, 51100 Reims – Le bien-être chez soi</footer>
+<div class="callbar"><a href="tel:+33686392622">📞 Appeler</a><a href="mailto:d.confort.client@outlook.fr?subject=Demande%20de%20devis%20gratuit">Devis gratuit</a></div>
+</body>
+</html>
